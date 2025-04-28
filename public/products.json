@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Indomilk Full Cream Milk Powder",
+        "price": 11000,
+        "description": "Indomilk Full Cream Milk Powder is a high-quality milk powder made from fresh cow's milk. It is rich in nutrients and has a creamy taste, making it perfect for cooking, baking, or enjoying as a drink."
+    },
+    {
+        "id": 2,
+        "name": "Indomilk UHT",
+        "price": 10000,
+        "description": "Indomilk UHT is a long-lasting milk product that is perfect for those who want the convenience of milk without refrigeration. It is made from fresh cow's milk and has a creamy taste, making it ideal for drinking or cooking."
+    },
+    {
+        "id": 3,
+        "name": "Diamond Full Cream Milk Powder",
+        "price": 19000,
+        "description": "Diamond Full Cream Milk Powder is a premium milk powder made from fresh cow's milk. It is rich in nutrients and has a creamy taste, making it perfect for cooking, baking, or enjoying as a drink."
+    },
+    {
+        "id": 4,
+        "name": "Diamond UHT",
+        "price": 17500,
+        "description": "Diamond UHT is a long-lasting milk product that is perfect for those who want the convenience of milk without refrigeration. It is made from fresh cow's milk and has a creamy taste, making it ideal for drinking or cooking."
+    },
+    {
+        "id": 5,
+        "name": "GreenField Full Cream Milk Powder",
+        "price": 22000,
+        "description": "GreenField Full Cream Milk Powder is a premium milk powder made from fresh cow's milk. It is rich in nutrients and has a creamy taste, making it perfect for cooking, baking, or enjoying as a drink."
+    },
+    {
+        "id": 6,
+        "name": "GreenField UHT",
+        "price": 20000,
+        "description": "GreenField UHT is a long-lasting milk product that is perfect for those who want the convenience of milk without refrigeration. It is made from fresh cow's milk and has a creamy taste, making it ideal for drinking or cooking."
+    },
+    {
+        "id": 7,
+        "name": "Nestle Full Cream Milk Powder",
+        "price": 25000,
+        "description": "Nestle Full Cream Milk Powder is a premium milk powder made from fresh cow's milk. It is rich in nutrients and has a creamy taste, making it perfect for cooking, baking, or enjoying as a drink."
+    },
+    {
+        "id": 8,
+        "name": "Nestle UHT",
+        "price": 23000,
+        "description": "Nestle UHT is a long-lasting milk product that is perfect for those who want the convenience of milk without refrigeration. It is made from fresh cow's milk and has a creamy taste, making it ideal for drinking or cooking."
+    }
+]
