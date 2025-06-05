@@ -1,7 +1,9 @@
-import axios from 'axios';
 import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router';
 import { VITE_BASE_URL } from '../constant';
+import { useDispatch } from 'react-redux';
+import { setToken } from '../redux/auth-slice';
+import api from '../utils/axios';
 
 const INITIAL_FORM_STATE = {
   emailOrUsername: '',
@@ -9,6 +11,7 @@ const INITIAL_FORM_STATE = {
 };
 
 const Login = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [formData, setFormData] = useState(INITIAL_FORM_STATE);
   const [error, setError] = useState('');
@@ -30,8 +33,12 @@ const Login = () => {
     setLoading(true);
 
     try {
-      await axios.post(`${VITE_BASE_URL}/api/public/login`, formData);
-      navigate('/dashboard');
+      const response = await api.post(
+        `${VITE_BASE_URL}/api/public/login`,
+        formData,
+      );
+      dispatch(setToken(response.data.accessToken));
+      navigate('/dashboard', { replace: true });
     } catch (err) {
       const errorMessage = err.response?.data?.message || err.message;
       setError(errorMessage);
@@ -68,7 +75,11 @@ const Login = () => {
         />
         <br />
         <br />
-        <button type="submit" disabled={loading}>
+        <button
+          type="submit"
+          disabled={loading}
+          className={`submit-button ${loading ? 'loading' : ''}`}
+        >
           {loading ? 'Logging in...' : 'Login'}
         </button>
       </form>
